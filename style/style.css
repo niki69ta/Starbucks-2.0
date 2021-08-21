@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-width: 1366px;
+}
+
+.container{
+  height: 100vh;
+  width: 1366px;
+  padding: 0 5% 0 5%;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  position: relative;  /*относительное позиционирование для контейнера в котором будет сайт*/
+}
+
+.logo {
+  width: 78px;
+  padding-top: 15px;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex; /*в ГЛАВНОМ блоке/контейнере меню*/
+  justify-content: space-between; /*чтобы меню было по разным сторонам*/
+  align-items: center;
+}
+
+.navbar li:hover {
+	opacity: 0.85;
+	color: #017143;
+	border-bottom: 2px solid currentColor;
+}
+
+.navbar li:first-child {
+	opacity: 0.85;
+	color: #017143;
+	border-bottom: 2px solid currentColor;
+}
+
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.content h1{
+  font-size: 55px;
+  line-height: 68px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.content h1 span{
+  font-size: 55px;
+	font-weight: 900;
+	color: #017143;
+}
+
+.content p{
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.content{
+  width: 490px;
+  margin-left: 3%;
+  margin-top: 8%;
+}
+
+.content .btn{
+  display: inline-block;
+  background-color: #017143;
+  border-radius: 30px;
+  padding: 20px 18px;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.content .btn:hover{
+  transform-origin: center;
+  transform: scale(0.96);
+  fill: transparent;
+  opacity: 0.9;
+}
+
+.feature-img{
+  height: 510px;
+  position: absolute;
+  top: 15%;
+  bottom: 30px;
+  right: 180px;
+}
+
+.social-links {
+  position: absolute;
+  right: 2%;
+  top: 38%;
+  bottom: 35%;
+}
+
+.mini_logo {
+  width: 29px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.mini_logo:hover {
+    transform-origin: center;
+    transform: scale(1.2);
+    fill: transparent;
+    opacity: 0.85;
+    transition: 0.4s;
+}
+
+.bottom_logo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 95%;
+  height: auto;
+  bottom: 2%;
+}
+
+.bottom_logos:hover {
+	transform: translateY(-15px);
+}
+
+.bottom_logos {
+  width: 57px;
+  margin-right: 25px;
+  transition: 0.5s;
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #017143;
+	clip-path: circle(600px at right 800px);
+	z-index: -1;
+}

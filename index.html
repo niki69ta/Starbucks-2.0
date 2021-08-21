@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home | Starbucks</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+  		function imgSlider(anything){
+  			document.querySelector('.feature-img').src = anything;
+  		}
+
+  		function changeCircleColor(color){
+  			const circle = document.querySelector('.circle');
+  			circle.style.background = color;
+  		}
+  	</script>
+
+    <meta name="viewport" content="width=1366">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="https://www.starbucks.com/about-us/company-information"><img src="./images/logo.png" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">What’s New</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>
+            It’s not just Coffee
+            It’s <span>Starbucks</span>
+        </h1>
+        <p>Our coffee masters have distilled their years of<br>
+            tasting knowledge down to three simple questions<br>
+            to help you find a Starbucks coffee you’re sure to love.
+        </p>
+        <a href="https://athome.starbucks.com/coffee-finder/" class="btn">Take our coffee quiz</a>
+      </div>
+
+      <img src="./images/img1L.png" class="feature-img">
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/starbucks" class="social-icons">
+              <img src="./images/facebookIcon.svg" class="mini_logo">
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.twitter.com/starbucks" class="social-icons">
+              <img src="./images/twitterIcon.svg" class="mini_logo">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/starbucks/" class="social-icons">
+              <img src="./images/instaIcon.svg" class="mini_logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+          <ul class="bottom_logo">
+        		<li>
+              <img src="./images/thumb1S.png" class="bottom_logos" onclick="imgSlider('./images/img1L.png'); changeCircleColor('#017143')">
+            </li>
+        		<li>
+              <img src="./images/thumb2S.png" class="bottom_logos" onclick="imgSlider('./images/img2L.png'); changeCircleColor('#eb7495')">
+            </li>
+        		<li>
+              <img src="./images/thumb3S.png" class="bottom_logos" onclick="imgSlider('./images/img3L.png'); changeCircleColor('#d752b1')">
+            </li>
+        	</ul>
+      </footer>
+
+      <div class="circle"></div>
+
+    </div>
+  </body>
+</html>
