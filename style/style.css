@@ -6,12 +6,12 @@
 }
 
 body {
-  min-width: 1366px;
+  width: 100vw;
 }
 
 .container{
   height: 100vh;
-  width: 1366px;
+
   padding: 0 5% 0 5%;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar {
-  width: 100%;
+  padding-left: 14px;
   height: 15vh;
   margin: auto;
   display: flex; /*в ГЛАВНОМ блоке/контейнере меню*/
@@ -62,9 +62,14 @@ nav ul li a{
   margin-top: 24px;
   margin-bottom: 15px;
 }
+/* .content h1{
+  font-size: 4.5vw;
+  line-height: 5vw;
+  margin-top: 24px;
+  margin-bottom: 15px;
+} */
 
 .content h1 span{
-  font-size: 55px;
 	font-weight: 900;
 	color: #017143;
 }
@@ -76,9 +81,17 @@ nav ul li a{
 }
 
 .content{
-  width: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 490px;
   margin-left: 3%;
-  margin-top: 8%;
+  margin-top: 8%; */
+  /* float: left; */
+}
+
+.mainText{
+  margin-left: -5%;
 }
 
 .content .btn{
@@ -100,11 +113,11 @@ nav ul li a{
 }
 
 .feature-img{
-  height: 510px;
-  position: absolute;
-  top: 15%;
-  bottom: 30px;
-  right: 180px;
+  height: 70vmin;
+  /* position: absolute;
+  top: 17%;
+  right: 12%; */
+  /* float: right; */
 }
 
 .social-links {
@@ -154,6 +167,48 @@ nav ul li a{
 	width: 100%;
 	height: 100%;
 	background: #017143;
-	clip-path: circle(600px at right 800px);
+	clip-path: circle(50% at right 744px);
 	z-index: -1;
+}
+
+@media only screen and (min-width: 1441px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .mainText {
+    margin-left: 0;
+  }
+  .circle {
+    clip-path: circle(49% at right 780px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainText {
+    margin-left: 0;
+  }
+  .content h1 {
+    font-size: 4.5vw;
+    line-height: 5vw;
+  }
+  .circle {
+    clip-path: circle(50% at right 665px);
+  }
+  .content p {
+    margin-top: 18px;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+  .content .btn {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content .btn{
+    background-color: #4d1d31;
+  }
+  .circle {
+  	clip-path: circle(50% at right 70%);
+  }
 }
